@@ -1,0 +1,97 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+#header{
+  display: flex;
+  background-color: #032B36;
+  color:#ffff;
+  /*position: fixed;            /* ヘッダーの固定 */
+  top: 0px;                   /* 位置(上0px) */
+  left: 0px;                  /* 位置(右0px) */
+  width: 100%;                /* 横幅100%　*/
+  height: 90px;              /* 縦幅140px */
+}
+
+#header h1{
+  display: flex;
+  margin-right: auto;
+  color: #f1c40f;
+}
+h1 span{
+  color: #faeaab;
+}
+
+#button{
+  display: flex;
+  justify-content: flex-end;
+  color: #294D57;
+  background-color: #f3ca27;
+  border-color: #f3ca27;
+}
+
+
+.ja {
+    width:90px;
+    height: 40px;
+    font-size:15px;
+    font-weight:bold;
+    text-decoration:none;
+    text-align:center;
+    padding:8px 0 8px;
+    margin-top: 20px;
+    margin-right: 10px;
+    color:black;
+    background-color:white;
+    border-radius:5px;
+    /*float: right;*/
+}
+
+.en {
+    width:90px;
+    height: 40px;
+    font-size:15px;
+    font-weight:bold;
+    text-decoration:none;
+    text-align:center;
+    padding:8px 0 8px;
+    margin-top: 20px;
+    margin-right: 10px;
+    color:black;
+    background-color:white;
+    border-radius:5px;
+    /*float: right;*/
+}
+
+.login {
+    width:90px;
+    height: 40px;
+    font-size:15px;
+    font-weight:bold;
+    text-decoration:none;
+    text-align:center;
+    padding:8px 0 8px;
+    margin-top: 20px;
+    margin-right: 10px;
+    color: #294D57;
+    background-color: #f3ca27;
+    border-color: #f3ca27;
+    /*float: right;*/
+}
+
+.logout {
+    width:90px;
+    height: 40px;
+    font-size:15px;
+    font-weight:bold;
+    text-decoration:none;
+    text-align:center;
+    padding:8px 0 8px;
+    margin-top: 20px;
+    margin-right: 10px;
+    color: #294D57;
+    background-color: #f3ca27;
+    border-color: #f3ca27;
+    border-radius:5px;
+    display: none;
+    /*float: right;*/
+}

@@ -1,0 +1,281 @@
+@charset "UTF-8";
+html {
+	overflow-y: scroll;
+}
+/* リセットおまじない--------------------------------- */
+
+body, h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: #fff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.4;
+	min-width: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+li {
+	list-style: none;
+}
+a {
+	outline: none;
+	color: inherit;
+	text-decoration: none;
+}
+img {
+	border: 0px;
+	vertical-align: bottom;
+}
+/* --------------------------------------------------- */
+
+body {
+	/*font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;*/
+	font-family: 'Lato', sans-serif;
+}
+.bg-blue {
+	background-color: blue;
+}
+.bg-red{
+	background-color: red;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  background-color: #111;
+  text-align: center;
+  position: fixed;
+	z-index: 2;
+}
+header ul {
+  width: 900px;
+  margin: 0 auto;
+  display: block;
+}
+header li {
+  float: left;
+  color: #ddd;
+  width: 16%;
+  line-height: 60px;
+}
+section {
+  text-align: center;
+  padding: 0px 0px;
+}
+section h1 {
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 80px;
+  font-weight: 200;
+}
+.box {
+  max-width: 1200px;
+  margin: auto;
+}
+#sec1 {
+  background-image: url("../img/photo_01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  background-size: cover;
+}
+#sec1 h1.txt-5 {
+  font-size: 5px;
+}
+#sec1 h1 {
+  font-size: 55px;
+  color: #fff;
+  padding-top: 180px;
+}
+#sec1 h1 br {
+	display: none;
+}
+#sec2 .float_area {
+	*zoom: 1;
+}
+#sec2 .float_area::before {
+	content: " ";
+	display: table;
+}
+#sec2 .float_area::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+#sec2 .float_area div {
+  float: left;
+  width: 29%;
+  margin: 0 2%;
+  text-align: left;
+}
+#sec2 .float_area div h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#sec2 .float_area div p {
+  font-size: 14px;
+  height: 1.8;
+  margin-bottom: 14px;
+}
+#sec3 {
+  background-image: url(../img/photo_02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+#sec3 p {
+  font-size: 16px;
+  line-height: 2;
+  margin: 16px;
+}
+#sec4 p {
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+#sec4 .port ul {
+  padding: 80px 0px;
+  margin-right: -30px;
+	*zoom: 1;
+}
+/*IE6と7用のスタイル崩れを防ぐための記述*/
+#sec4 .port ul::before {
+	content: " ";
+	display: table;
+}
+/*floatを解除する方法(Progateの方法と異なる。本対応推奨)*/
+#sec4 .port ul::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+#sec4 .port li {
+  float: left;
+  width: 277px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-left: 0px;
+  text-align: left;
+}
+#sec4 .port li img {
+  width: 100%;
+}
+#sec4 .port img.big {
+	/*height: 400px;*/
+	width: 400px;
+}
+#sec4 .port li p {
+  font-size: 14px;
+  margin: 5px 0px;
+}
+footer {
+  height: 80px;
+  background-color: #111;
+}
+footer .copyright {
+  color: #aaa;
+  font-size: 12px;
+  padding-top: 30px;
+  letter-spacing: 1px;
+}
+
+.swiper-container {
+		width: 500px;
+		height: 300px;
+		margin: 20px auto;
+}
+.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #8495;
+	  Center slide text vertically
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+}
+
+
+
+/* ティザー用*/
+/*div#container { position: relative; }*/
+@media screen and (max-width: 1024px) { img.bg { left: 50%; margin-left: -512px; } }
+.home-nav { width: 100%; /*height: 120px;*/ position: absolute; top: 50%; margin-top: -60px; background-color: rgba(0, 0, 0, 0.18); color: #f1c40f; }
+.home-nav-inner { width: 960px; margin: 0 auto; }
+/*
+.home-nav-inner h1 { /*background-image: url(../img/logo.png); background-repeat: no-repeat; background-size: contain; /*text-indent: 100%; white-space: nowrap; overflow: hidden; margin: 35px 0 0 0; width: 181px; float: left; font-size: 30px; }
+*/
+.home-nav-inner h1{float:none;margin:20px auto;}
+.home-nav-inner ul { float: right; list-style: none; margin-top: 53px; }
+.home-nav-inner ul li { float: left; margin: 0 0 5px 15px; }
+.list-br { clear: both; }
+.home-nav-inner ul li a { color: white; -webkit-transition: opacity 0.3s linear; -moz-transition: opacity 0.3s linear; -o-transition: opacity 0.3s linear; transition: opacity 0.3s linear; }
+.home-nav-inner ul li a:hover { opacity: 0.6; text-decoration: none; }
+.home .site { background-color: transparent; }
+
+/* iPadç¸¦ */
+@media (max-width: 999px) {
+.pc-only{display:none;}
+.mobile-only{display:none;}
+.mobile-tablet-only{display:block;}
+.tablet-only{display:block;}
+.pc-tablet-only{display:block;}
+.home .home-nav{margin-top: -67px;height:134px;}
+.home-nav-inner{width:100%;}
+.home-nav-inner h1{float:none;margin:20px auto;}
+.home-nav-inner ul{float:none;margin:0 auto 10px auto;padding:0;text-align:center;}
+.home-nav-inner ul li{margin: 0 8px;display:inline-block;float:none;}
+
+@media (max-width: 767px) {
+.pc-only{display:none;}
+.mobile-only{display:none;}
+.mobile-tablet-only{display:block;}
+.tablet-only{display:block;}
+.pc-tablet-only{display:block;}
+.home .home-nav{margin-top: -67px;height:134px;}
+.home-nav-inner{width:100%;}
+.home-nav-inner h1{float:none;margin:20px auto;}
+.home-nav-inner ul{float:none;margin:0 auto 10px auto;padding:0;text-align:center;}
+.home-nav-inner ul li{margin: 0 8px;display:inline-block;float:none;}
+
+@media (max-width: 643px) {
+.pc-only{display:none;}
+.tablet-only{display:none;}
+.pc-tablet-only{display:none;}
+.mobile-only{display:block;}
+.mobile-tablet-only{display:block;}
+.home .home-nav{margin:0;height:auto;top:0;background-color:transparent;position:static;}
+.home-nav-inner{width:100%;}
+.home-nav-inner h1{margin:20px auto;float:none;}
+.home .home-nav-inner ul{margin:0 !important;padding:0 !important;float:none;}
+.home-nav-inner ul li{margin:0;float:none;display:block;text-align:center;border-top: 1px solid #ddd; background-color: rgba(0,0,0,0.3); -webkit-transition: background-color 0.3s linear; -moz-transition: background-color 0.3s linear; -o-transition: background-color 0.3s linear; transition: background-color 0.3s linear;}
+.home-nav-inner ul li a{display:block; padding: 14px;}
+.home-nav-inner ul li:hover{background-color:rgba(0,0,0,0.5);color:#ddd;}
+.home-nav-inner ul li:last-child{border-bottom: 1px solid #ddd;}
+
+@media (max-width: 480px) {
+.pc-only{display:none;}
+.tablet-only{display:none;}
+.pc-tablet-only{display:none;}
+.mobile-only{display:block;}
+.mobile-tablet-only{display:block;}
+.home .home-nav{margin:0;height:auto;top:0;background-color:transparent;position:static;}
+.home-nav-inner{width:100%;}
+.home-nav-inner h1{margin:20px auto;float:none;}
+.home .home-nav-inner ul{margin:0 !important;padding:0 !important;float:none;}
+.home-nav-inner ul li{margin:0;float:none;display:block;text-align:center;border-top: 1px solid #ddd; background-color: rgba(0,0,0,0.3); -webkit-transition: background-color 0.3s linear; -moz-transition: background-color 0.3s linear; -o-transition: background-color 0.3s linear; transition: background-color 0.3s linear;}
+.home-nav-inner ul li a{display:block; padding: 14px;}
+.home-nav-inner ul li:hover{background-color:rgba(0,0,0,0.5);color:#ddd;}
+.home-nav-inner ul li:last-child{border-bottom: 1px solid #ddd;}
